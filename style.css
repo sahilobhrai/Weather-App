@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500;1,600&family=Poppins&family=Roboto+Mono:ital@1&display=swap');
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92.5vh;
+    margin: 0;
+    font-family: 'Lora', serif;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    background-size: cover;
+}
+.card-box{
+    background:#679cc2d5;
+    padding: 2rem;
+   
+    max-width: 500px;
+    margin-top: -5rem;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+input.search-bar{
+    border: none;
+    outline: none;
+    padding: 0.4em .75em;
+    border-radius: 18px;
+    font-size: 18px;
+    width: max-content;
+}
+.search-bar{
+    margin: 15px;
+}
+button{
+    margin: 0.5rem;
+    border-radius: 50%;
+    border: none;
+    width: 44px;
+    height: 43px;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(218, 208, 208);
+}
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+.description{
+    margin-top: 11px;
+    font-size: 18px;
+}
+
+.flex{
+    display: flex;
+
+}
+.weather.loading:after{
+    visibility: visible;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 24px;
+}
